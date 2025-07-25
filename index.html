@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill-Bee: Rent Tools. Build Skills. Save Money.</title>
+    <link rel="shortcut icon" href="site-contents/Skill-Bee LOGO.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            
+            <div class="nav-logo">
+                <div class="site-logo">
+                <a href="#home"><h2>Skill-Bee</h2></a>
+                <a href="#home"><img src="site-contents/SKill bee logogradient2.jpg" alt="site-logo" width="30px" id="bee-logo" loading="lazy"></a>
+                </div>  
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#browse" class="nav-link">Browse</a>
+                <a href="#how-it-works" class="nav-link">How it Works</a>
+                <a href="#community" class="nav-link">Community</a>
+                <button class="btn-list-tool"><p>List Your Tool</p></button>
+                <div class="user-menu">
+                    <button class="btn-secondary"><p>Sign In</p></button>
+                    <button class="btn-primary"><p>Sign Up</p></button>
+
+                </div>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-nav-overlay"></div>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <img src="site-contents/Skill-Bee LOGO.png" alt="logo" width="200px" id="beehomelogo" loading="lazy">
+                <h1 class="hero-title">
+                    <p id="renttools">Rent Tools.<br></p>
+                    <span class="gradient-text" id="buildskils">Build Skills.</span><br>
+                    <span id="savemoney">Save Money.</span>
+                </h1>
+                <h2 class="hero-tagline">Why Buy? When you can Just Skill-Bee it.</h2>
+                <p class="hero-subtitle">
+                    Whether you're a student, freelancer, or aspiring content creator — 
+                    Skill-Bee connects you with nearby gear like cameras, laptops, lights, 
+                    and more. Why buy when you can rent and build your dream?
+                </p>
+                <div class="hero-search">
+                    <div class="search-container">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="What tool do you need?" class="search-input">
+                        <button class="search-btn"><p>Find Tools</p></button>
+                    </div>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">1.5K+</span>
+                        <span class="stat-label">Tools Available</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Happy Renters</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Tool Owners</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-cards">
+                    <div class="tool-card floating">
+                        <div class="tool-image">
+                            <div class="image-placeholder camera-bg">
+                                <div class="icon">
+                                <i class="fas fa-camera"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>Canon EOS R5</h4>
+                        <p>₹399/hour</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.9</span>
+                        </div>
+                    </div>
+                    <div class="tool-card floating delay-1">
+                        <div class="tool-image">
+                            <div class="image-placeholder laptop-bg">
+                                <div class="icon">
+                                <i class="fas fa-laptop"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>MacBook Pro M3</h4>
+                        <p>₹899/hour</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                    <div class="tool-card floating delay-2">
+                        <div class="tool-image">
+                            <div class="image-placeholder mic-bg">
+                                <div class="icon">
+                                <i class="fas fa-microphone"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>Blue Yeti Mic</h4>
+                        <p>₹149/hour</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.7</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Popular Categories</h2>
+            <div class="categories-grid">
+                <div class="category-card" data-category="cameras">
+                    <div class="category-icon camera-bg">
+                        
+                    </div>
+                    <h3>Cameras & Lenses</h3>
+                    <p>DSLRs, mirrorless, action cams</p>
+                    <span class="tool-count">100+ tools</span>
+                </div>
+                <div class="category-card" data-category="laptops">
+                    <div class="category-icon laptop-bg">
+                        
+                    </div>
+                    <h3>Laptops & Tablets</h3>
+                    <p>MacBooks, gaming laptops, iPads</p>
+                    <span class="tool-count">550+ tools</span>
+                </div>
+                <div class="category-card" data-category="audio">
+                    <div class="category-icon mic-bg">
+                        
+                    </div>
+                    <h3>Audio Equipments</h3>
+                    <p>Mics, headphones, speakers</p>
+                    <span class="tool-count">150+ tools</span>
+                </div>
+                <div class="category-card" data-category="lighting">
+                    <div class="category-icon light-bg">
+                        
+                    </div>
+                    <h3>Lighting & Gear</h3>
+                    <p>Ring lights, softboxes, LED panels</p>
+                    <span class="tool-count">400+ tools</span>
+                </div>
+                <div class="category-card" data-category="projectors">
+                    <div class="category-icon projector-bg">
+                      
+                    </div>
+                    <h3>Projectors & Displays</h3>
+                    <p>4K projectors, monitors, TVs</p>
+                    <span class="tool-count">120+ tools</span>
+                </div>
+                <div class="category-card" data-category="gaming">
+                    <div class="category-icon gaming-bg">
+                        
+                    </div>
+                    <h3>Gaming & VR</h3>
+                    <p>Consoles, VR headsets, controllers</p>
+                    <span class="tool-count">100+ tools</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Tools Section -->
+    <section class="featured-tools" id="browse">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Trending Rentals</h2>
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="cameras">Cameras</button>
+                    <button class="filter-btn" data-filter="laptops">Laptops</button>
+                    <button class="filter-btn" data-filter="audio">Audio</button>
+                    <button class="filter-btn" data-filter="lighting">Lighting</button>
+                </div>
+            </div>
+            <div class="tools-grid" id="tools-grid">
+                <!-- Tools will be dynamically loaded here -->
+            </div>
+            <div class="load-more">
+                <button class="btn-secondary" id="loadmore"><p>Load More Tools</p></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="skillbeework">
+                <img src="site-contents/Skill-Bee LOGO.png" alt="logo" width="150px" id="gradientbee" loading="lazy"> 
+            <h2 class="section-title">How Skill-Bee Works</h2>
+            </div>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>1. Browse & Discover</h3>
+                    <p>Search for the perfect tool in your area. Filter by category, price, and availability.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>2. Book & Pay</h3>
+                    <p>Select your rental dates, pay securely, and message the owner for pickup details.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>3. Create & Return</h3>
+                    <p>Use the tool for your project, then return it safely. Rate your experience!</p>
+                </div>
+            </div>
+            <div class="cta-buttons">
+                <button class="btn-primary"><p>Start Renting</p></button>
+                <button class="btn-outline"><p>List Your Tools</p></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="community" id="community">
+        <div class="container">
+            <h2 class="section-title">Join the Creator Community</h2>
+            <div class="community-grid">
+                <div class="community-card">
+                    <div class="user-avatar">
+                        <div class="avatar-placeholder">
+                            <!-- <i class="fas fa-user"></i> -->
+                             <img src="site-contents/ISO.png" alt="user_avatar" width="100px" class="avatar" loading="lazy">
+                        </div>
+                    </div>
+                    <h4>ISO</h4>
+                    <p class="user-role">Content Creator</p>
+                    <p class="testimonial">"Skill-Bee helped me access a RED camera for my short film without breaking the bank. Game changer!"</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="community-card">
+                    <div class="user-avatar">
+                        <div class="avatar-placeholder">
+                            <!-- <i class="fas fa-user"></i> -->
+                            <img src="site-contents/Clove.jpg" alt="user_avatar" width="100px" class="avatar" loading="lazy">
+                        </div>
+                    </div>
+                    <h4>Clove</h4>
+                    <p class="user-role">Photography Student</p>
+                    <p class="testimonial">"Perfect for trying out expensive gear before buying. The community is super helpful and friendly!"</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="community-card">
+                    <div class="user-avatar">
+                        <div class="avatar-placeholder">
+                            <!-- <i class="fas fa-user"></i> -->
+                            <img src="site-contents/Cypher.jpg" alt="user_avatar" width="100px" class="avatar" loading="lazy">
+                        </div>
+                    </div>
+                    <h4>Cypher</h4>
+                    <p class="user-role">Freelance Designer</p>
+                    <p class="testimonial">"I've earned over $2000 renting out my extra MacBook and camera gear. Love this platform!"</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>Skill-Bee</h3>
+                        <p>Empowering creators with accessible tools</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>For Renters</h4>
+                    <ul>
+                        <li><a href="#">Browse Tools</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Safety Tips</a></li>
+                        <li><a href="#">Insurance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>For Owners</h4>
+                    <ul>
+                        <li><a href="#">List Your Tool</a></li>
+                        <li><a href="#">Pricing Guide</a></li>
+                        <li><a href="#">Owner Protection</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Skill-Bee. All rights reserved. Built for creators, by creators.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-bottom-nav">
+        <a href="#home" class="nav-item active">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="#browse" class="nav-item">
+            <i class="fas fa-search"></i>
+            <span>Browse</span>
+        </a>
+        <a href="#favorites" class="nav-item">
+            <i class="fas fa-heart"></i>
+            <span>Favorites</span>
+        </a>
+        <a href="#messages" class="nav-item">
+            <i class="fas fa-message"></i>
+            <span>Messages</span>
+        </a>
+        <a href="#profile" class="nav-item">
+            <i class="fas fa-user"></i>
+            <span>Profile</span>
+        </a>
+    </nav>
+
+    <!-- Tool Detail Modal -->
+    <div class="modal" id="tool-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Tool Details</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Tool details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+     <script src="script.js"></script>
+     
+     
+</body>
+</html>
